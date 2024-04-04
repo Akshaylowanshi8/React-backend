@@ -1,7 +1,7 @@
 body {
     margin: 0px;
     padding: 0px; 
-    background-color:lavender;
+    background-color:rgb(235, 248, 252);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -18,7 +18,7 @@ a{
     height: 400px;
     width: 400px;
     display: grid;
-    background-color: rgb(201, 235, 235);
+    background-color: rgb(67, 212, 212);
     justify-content: center;
     align-items: center;
     box-shadow: black 0px 0px 5px 1px;
@@ -30,3 +30,30 @@ input{
     
 
 }
+
+.header{
+display: flex;
+justify-content: center;
+    margin-top: 40px;
+}
+
+.homed{
+
+    display: grid;
+    justify-content: center;
+    align-items: center;
+}
+
+table, th, td {
+    border: 1px solid;
+  }
+
+  table {
+    width: 100%;
+  }
+  
+  th {
+    height: 70px;
+    background-color: #ee6767;
+
+  }
