@@ -8,7 +8,7 @@ const Display =()=>{
     const Dataload=()=>{
    axios.get("http://localhost:8000/display").then((res) => {
    SetEmpdata(res.data)
-   console.log(res.data)
+//    console.log(res.data)
 })}
 
  useEffect(()=>{
@@ -31,8 +31,8 @@ return(
     <>
     
 <h1 className="">display our data</h1>
-<table>
-<tr className="tbl">
+<table className="tbl" align="center" width="800" bgcolor="green" border="2px" cellPadding={6}>
+<tr>
 <th>S.No</th>
 <th>Employee Name</th>
 <th>Employee Number</th>

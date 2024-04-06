@@ -30,7 +30,7 @@ return(
     <label> Employee No  :   <input className="" name="EmpNo" value={input.EmpNo} onChange={handleinput} /></label>
     <label> Employee Selary :<input className="" name="EmpSal" value={input.EmpSal} onChange={handleinput} /></label>
     <label> Employee Branch <input className="" name="EmpBran" value={input.EmpBran} onChange={handleinput} /></label>
-    <button className="" onClick={onsubmit}>submit data</button>
+    <button id="btn" onClick={onsubmit}><span>submit data</span> </button>
 
 </div>
 </>

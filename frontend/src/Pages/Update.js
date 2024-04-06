@@ -54,15 +54,15 @@ let ans =data.map((e,i)=>{
 
 return(<>
 
-<table>
+<table align="center" width="800" bgcolor="green" border="2px" cellPadding={6}>
 <tr className="tbl">
 <th>S.No</th>
 <th>Employee Name</th>
 <th>Employee Number</th>
 <th>Employee salary </th>
 <th>Employee Branch</th>
-<th >   Delete</th>
-
+<th >Delete</th>
+<th>Edit</th>
 </tr>
 
 {ans}

@@ -22,11 +22,10 @@ app.post("/insert",EmpCont.EmployeeAdd);
 app.get("/display",EmpCont.GetEmpdata )
 app.get("/Update", EmpCont.GetUpdEmpata );
 app.post("/DelEmpdata",EmpCont.EmpdataDel);
-
-
-
-
-
+app.post("/DelEmpdata",EmpCont.EmpdataDel);
+app.post("/getdata",EmpCont.EmpGetdata);
+app.post("/editsave",EmpCont.EditEmpdataupdate);
+app.post("/Search",EmpCont.SearchEmpdata);
 
 const port = process.env.PORT || 8000;
 
