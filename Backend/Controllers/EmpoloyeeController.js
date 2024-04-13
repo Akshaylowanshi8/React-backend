@@ -14,39 +14,33 @@ const EmployeeAdd=async(req,res)=>{
     EmployeeData.save();
     res.send("save")
 }
-const GetEmpdata =async( req,res)=>{
+const GetEmpdata =async(req,res)=>{
     EmpModel.find().then((data) => {
         res.send(data);
     // console.log(data)
-        
     })
 }
-
 const GetUpdEmpata=async(req,res)=>{
     EmpModel.find().then((data) => {
         res.send(data);
     // console.log(data)
 }
-    
-    )}
+)}
 
 const EmpdataDel=async(req,res)=>{
 let id =req.body.id;
 EmpModel.findByIdAndDelete(id).then((data)=>{
-      res.json(data);
+    res.json(data);
 
     })
-
 }
 
 const EmpGetdata=(req,res)=>{
-  let id =req.body.id;
+let id =req.body.id;
 EmpModel.findById(id).then((data) => {
-    res.json(data);
+res.json(data);
 })
 }
-
-
 const EditEmpdataupdate=(req,res)=>{
 let myid =req.body._id;
 let EmpNames=req.body.EmpName;
@@ -60,9 +54,7 @@ EmpModel.findByIdAndUpdate(myid,{
     EmpBran:EmpBrans,
 })
 .then((data)=>{
-
-    res.send("save")
-
+ res.send("save")
 })
 }
 const SearchEmpdata= async(req,res)=>{
@@ -70,7 +62,7 @@ let eno=req.body.eno;
 EmpModel.find({ EmpNo:eno})
 .then((data)=>{
 
-    res.send(data)
+res.send(data)
 })
 }
 

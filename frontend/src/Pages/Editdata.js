@@ -39,8 +39,7 @@ const handleinput=(e)=>{
             EmpSal:""
         })  
     myNav("/display")
-
-      }
+}
 return(
     <>
 <div className="formdiv">
